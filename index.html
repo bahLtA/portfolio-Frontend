@@ -58,19 +58,6 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        function cambiar_parrafo(){
-            document.getElementById("edit-acercade").style.display="block";
-            let texto = document.getElementById("text-acercade").innerText;
-            console.log(texto);
-        }
-
-        function myFunction2(valor) {
-            document.getElementById("text-acercade").innerText = valor;
-        }
-    </script>
-
     <div class="card mat-card">
         <div class="card-titles">
             <h2>Acerca de</h2>
@@ -84,10 +71,10 @@
             <p id="text-acercade">Matemático, físico e informático argentino considerado por muchos como el padre de la computación</p>
         </div>
         <div>
-            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
-        </div>
+			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
+		</div>
     </div>
-
-
+    <script src="index.js"></script>
+	
 </body>
 </html>
